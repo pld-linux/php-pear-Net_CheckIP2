@@ -3,15 +3,17 @@
 %define		_subclass	CheckIP2
 %define		_status		beta
 %define		_pearname	Net_CheckIP2
+%define		subver	RC3
+%define		rel		1
 Summary:	%{_pearname} - A package to determine if an IP (v4) is valid
 Summary(pl.UTF-8):	%{_pearname} - pakiet do określania poprawności adresu IP (v4)
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
-Release:	0.RC2.1
+Release:	0.%{subver}.%{rel}
 License:	MIT License
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}RC2.tgz
-# Source0-md5:	9097704ed67b1a3528288d9fdcdc3a1d
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{subver}.tgz
+# Source0-md5:	b200f6521c59e235a60dbb961ab9a060
 URL:		http://pear.php.net/package/Net_CheckIP2/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -34,9 +36,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-AutoReq:	no
 Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
