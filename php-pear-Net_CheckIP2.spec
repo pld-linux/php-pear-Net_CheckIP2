@@ -4,7 +4,7 @@
 %define		_status		beta
 %define		_pearname	Net_CheckIP2
 %define		subver	RC3
-%define		rel		1
+%define		rel		2
 Summary:	%{_pearname} - A package to determine if an IP (v4) is valid
 Summary(pl.UTF-8):	%{_pearname} - pakiet do określania poprawności adresu IP (v4)
 Name:		php-pear-%{_pearname}
